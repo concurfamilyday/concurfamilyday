@@ -36,7 +36,6 @@ function callpls(e){
     // Disabled form elements will not be serialized.
 
     // Fire off the request to /form.php
-    var url="https://script.google.com/macros/s/AKfycbzhx9SV1YuE9I5xoF0gpLJvzOsB0NCX4EdaMnENTjAnUVzJGkzl/exec";
     
 
       // var eml= validateEmail(inputs["#Employee_Email"]);
@@ -90,7 +89,7 @@ function validateName(name)
 
     $.ajax({
 
-        url:"https://script.google.com/macros/s/AKfycbzhx9SV1YuE9I5xoF0gpLJvzOsB0NCX4EdaMnENTjAnUVzJGkzl/exec" ,
+        url:"https://script.google.com/macros/s/AKfycbx6ne3qfcApJdcLyj5ezDCTWWWLuaxhoA9ZLOfdy2em7IiEgHlN/exec" ,
         type: 'GET',
         dataType:'jsonp',        
         crossDomain: true,
@@ -100,9 +99,9 @@ function validateName(name)
         // Log a message to the console
         $('#callus')[0].reset();
 
-        console.log('in callus success');
+        //console.log('in callus success');
         alert(response.result+"!!!"+response.reason);
-        console.log("Hooray, it worked!");
+        //console.log("Hooray, it worked!");
     },
     error:function(jqXHR, textStatus, errorThrown){
        console.log( "The following error occurred: "+
