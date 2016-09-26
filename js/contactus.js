@@ -1,4 +1,34 @@
+function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+    function validateInumber(ino)
+    {
+        var re = /^[A-Za-z]+$/;
+        inx=ino.substring(1);
+        iny=ino.substring(0,1);
+        console.log("iny="+iny);
 
+        console.log("inx="+inx);
+
+        console.log("in0="+ino[0]);
+        if((ino[0]=='i'||ino[0]=='I')&&!(re.test(inx))&&ino.length==6)
+            return true;
+        else 
+            return false;
+
+
+    }
+function validateName(name)
+{
+    var matches = name.match(/\d+/g);
+
+    if (name=="" || matches!=null)
+        return false;
+    else 
+        return true;
+
+}
 
 
 function callpls(e){
@@ -13,10 +43,24 @@ function callpls(e){
 
     // Let's select and cache all the fields
     var inputs = $form.find("#Employee_ID, #Employee_Name, #Employee_Email, #Adults, #Kids");
-    //console.log($inputs);
-    console.log(inputs);
     console.log("here here here");
+    
+    var eml= validateEmail(inputs["#Employee_Email"]);
+        var nam=validateName(inputs["#Employee_Name"]);
+        var ino=validateInumber(inputs["#Employee_ID"]);
+        console.log(eml);
+    console.log(nam);
+    console.log(ino);
+ if(eml&&nam&&ino)
+{
+
+    
+    
+    
     // Serialize the data in the form
+    
+    
+    
     var params = $form.serialize();
      console.log(params);
     // Let's disable the inputs for the duration of the Ajax request.
@@ -62,6 +106,20 @@ function callpls(e){
 
 
     });
+}
+    else
+    {   var opt="";
+        if(!eml)
+        opt=opt+"Email ID";
+        if(!nam)
+            opt=opt+",Employee name";
+        if(!ino)
+            opt=opt+",Employee Inumber";
+
+alert('Invalid '+opt);
+window.href("https://github.com/concurfamilyday/concurfamilyday");
+    }
+
 
     // Callback handler that will be called on success
    
