@@ -42,7 +42,7 @@ function callpls(e){
     var $form = $("#callus");
 
     // Let's select and cache all the fields
-    var inputs = $form.find("#Employee_ID, #Employee_Name, #Employee_Email, #Adults, #Kids");
+    var inputs = this.find("#Employee_ID, #Employee_Name, #Employee_Email, #Adults, #Kids");
     console.log("here here here");
     
     var eml= validateEmail(inputs["#Employee_Email"]);
