@@ -38,8 +38,8 @@ function callpls(e){
 
     $.ajax({
 
-        url:"https://script.google.com/macros/s/AKfycbzhx9SV1YuE9I5xoF0gpLJvzOsB0NCX4EdaMnENTjAnUVzJGkzl/exec&callback?" ,
-        type: 'POST',
+        url:"https://script.google.com/macros/s/AKfycbzhx9SV1YuE9I5xoF0gpLJvzOsB0NCX4EdaMnENTjAnUVzJGkzl/exec" ,
+        type: 'GET',
         dataType:'jsonp',
         crossDomain: true,
         data: params,
