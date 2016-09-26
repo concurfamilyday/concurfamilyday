@@ -117,7 +117,7 @@ function callpls(e){
             opt=opt+",Employee Inumber";
 
 alert('Invalid '+opt);
-window.href("https://github.com/concurfamilyday/concurfamilyday");
+window.href("concurfamilyday.github.io/concurfamilyday");
     }
 
 
