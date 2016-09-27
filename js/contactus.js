@@ -58,7 +58,7 @@
         var int_length = inx.length;
         console.log(int_length);
         console.log(isNaN(inx));
-        console.log(inx[i]);
+        console.log(inx[1]);
         //console.log(!isNan(inx));
         if(int_length != 6 || isNaN(inx))
             flag=false;
