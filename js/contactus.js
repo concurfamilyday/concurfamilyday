@@ -56,9 +56,11 @@
         var i=parseInt(inx);
         var flag=true;
         var int_length = inx.length;
-        console.log(int_length);
-        console.log(isNaN(inx));
+        console.log("hello");
         console.log(inx[1]);
+        console.log(inx[0]);
+        console.log(inx[2]);
+        console.log("hello");
         //console.log(!isNan(inx));
         if(int_length != 6 || isNaN(inx))
             flag=false;
