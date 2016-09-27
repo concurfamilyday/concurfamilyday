@@ -64,6 +64,9 @@
         //console.log(!isNan(inx));
         if(int_length != 6 || isNaN(inx))
             flag=false;
+        if(inx[0] != '0')
+            if(inx[0] != '3')
+                flag = false;
         iny=ino.substring(0,1);
         console.log("iny="+iny);
 
