@@ -41,6 +41,8 @@
       // var eml= validateEmail(inputs["#Employee_Email"]);
         var nam=validateName($('#Employee_Name').val());
         var ino=validateInumber($('#Employee_ID').val());
+        if($('#Kids').val() == null)
+            inputs.Kids = 0;
 
 
 
