@@ -1,7 +1,7 @@
 
 
 
-function callpls(e){
+
     $(document).submit(function(){
 
 // Bind to the submit event of our form
@@ -141,4 +141,4 @@ window.href("/index.html");
 
 
 });
-}
+
