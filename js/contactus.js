@@ -53,8 +53,7 @@ function callpls(e){
         inx=ino.substring(1);
         var i=parseInt(inx);
         var flag=true;
-        var int_length = (''+i).length;
-        if(int_length != 6)
+        if(i<100000)
             flag=false;
         iny=ino.substring(0,1);
         console.log("iny="+iny);
