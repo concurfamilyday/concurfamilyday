@@ -25,7 +25,7 @@
     inputs.Employee_ID=inputs.Employee_ID.toUpperCase();
     //console.log("here here here");
     // Serialize the data in the form
-    var params = jQuery.param(inputs);
+
      //console.log(params);
 
 
@@ -45,7 +45,7 @@
             inputs.Kids = 0;
 
 
-
+        var params = jQuery.param(inputs);
 
 
         
