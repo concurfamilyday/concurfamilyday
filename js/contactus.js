@@ -55,7 +55,8 @@ function callpls(e){
         var flag=true;
         var int_length = inx.length;
         console.log(int_length);
-        if(int_length != 6 && !isNaN(inx))
+        console.log(isNaN(inx));
+        if(int_length != 6 || !isNaN(inx))
             flag=false;
         iny=ino.substring(0,1);
         console.log("iny="+iny);
