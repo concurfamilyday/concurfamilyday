@@ -138,7 +138,7 @@ window.href("/index.html");
     
 
     // Prevent default posting of form
-    return false
+    return false;
     //event.preventDefault();
 
 
